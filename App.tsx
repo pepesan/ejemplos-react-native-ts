@@ -31,7 +31,6 @@ function App(): JSX.Element {
   };
 
   return (
-    /*
     <SafeAreaView>
       <ScrollView>
         <Views></Views>
@@ -45,9 +44,7 @@ function App(): JSX.Element {
         </View>
       </ScrollView>
     </SafeAreaView>
-
-     */
-    <Flexbox03></Flexbox03>
+    //<Flexbox03></Flexbox03>
   );
 }
 
