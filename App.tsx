@@ -22,6 +22,8 @@ import SectionLists from './components/lists/SectionLists';
 import Flexbox01Column from './components/flexbox/Flexbox01Column';
 import Flexbox02Row from "./components/flexbox/Flexbox02Row";
 import Flexbox03 from "./components/flexbox/Flexbox03";
+import ApiClient from "./components/httprequest/ApiClient";
+import MyApiClient from "./components/httprequest/MyApiClient";
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -31,6 +33,7 @@ function App(): JSX.Element {
   };
 
   return (
+    /*
     <SafeAreaView>
       <ScrollView>
         <Views></Views>
@@ -44,6 +47,10 @@ function App(): JSX.Element {
         </View>
       </ScrollView>
     </SafeAreaView>
+
+     */
+    //<ApiClient></ApiClient>
+    <MyApiClient></MyApiClient>
     //<Flexbox03></Flexbox03>
   );
 }
