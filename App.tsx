@@ -27,6 +27,7 @@ import MyApiClient from "./components/httprequest/MyApiClient";
 import Home from "./components/navigation/Home";
 import Main from "./components/navigation/Main";
 import MainTabs from "./components/navigation/tabs/MainTabs";
+import MyForm from "./components/forms/MyForm";
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -55,7 +56,8 @@ function App(): JSX.Element {
     //<ApiClient></ApiClient>
     //<MyApiClient></MyApiClient>
     //<Main></Main>
-    <MainTabs></MainTabs>
+    //<MainTabs></MainTabs>
+    <MyForm></MyForm>
     //<Flexbox03></Flexbox03>
   );
 }
