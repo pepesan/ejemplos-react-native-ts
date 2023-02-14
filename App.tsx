@@ -58,7 +58,8 @@ function App(): JSX.Element {
     //<MyApiClient></MyApiClient>
     //<Main></Main>
     //<MainTabs></MainTabs>
-    // <MyForm></MyForm>
+    //<MyForm></MyForm>
+    // <FlatLists></FlatLists>
     //<Flexbox01Column></Flexbox01Column>
     <Listado></Listado>
   );
