@@ -24,6 +24,8 @@ import Flexbox02Row from "./components/flexbox/Flexbox02Row";
 import Flexbox03 from "./components/flexbox/Flexbox03";
 import ApiClient from "./components/httprequest/ApiClient";
 import MyApiClient from "./components/httprequest/MyApiClient";
+import Home from "./components/navigation/Home";
+import Main from "./components/navigation/Main";
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -50,7 +52,8 @@ function App(): JSX.Element {
 
      */
     //<ApiClient></ApiClient>
-    <MyApiClient></MyApiClient>
+    //<MyApiClient></MyApiClient>
+    <Main></Main>
     //<Flexbox03></Flexbox03>
   );
 }
