@@ -1,14 +1,6 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 
-function StyleSheets(): JSX.Element {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>React Native</Text>
-    </View>
-  );
-}
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 24,
@@ -27,4 +19,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
-export default StyleSheets;
+
+export default Styles;

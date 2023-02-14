@@ -63,7 +63,6 @@ const MyApiClient = () => {
               />
               <Text style={styles.nombre}>{item.nombre}</Text>
               <Text style={{flex: 2}}>{item.dipu}</Text>
-
             </View>
           )}
         />

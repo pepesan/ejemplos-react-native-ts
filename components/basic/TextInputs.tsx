@@ -9,6 +9,7 @@ function TextInputs(): JSX.Element {
     <SafeAreaView>
       <TextInput
         style={styles.input}
+        // onChange => onChangeText(this.text)
         onChangeText={onChangeText}
         value={text}
       />

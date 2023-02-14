@@ -14,7 +14,7 @@ import Texts from './components/basic/Texts';
 import Images from './components/basic/Images';
 import TextInputs from './components/basic/TextInputs';
 import ScrollViews from './components/basic/ScrollViews';
-import StyleSheets from './components/basic/StyleSheets';
+import StyleSheets from './components/basic/styles/StyleSheets';
 import Botones from './components/ui/Botones';
 import Switches from './components/ui/Switches';
 import FlatLists from './components/lists/FlatLists';
@@ -28,6 +28,7 @@ import Home from "./components/navigation/Home";
 import Main from "./components/navigation/Main";
 import MainTabs from "./components/navigation/tabs/MainTabs";
 import MyForm from "./components/forms/MyForm";
+import Listado from "./components/props/Listado";
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -57,8 +58,9 @@ function App(): JSX.Element {
     //<MyApiClient></MyApiClient>
     //<Main></Main>
     //<MainTabs></MainTabs>
-    <MyForm></MyForm>
-    //<Flexbox03></Flexbox03>
+    // <MyForm></MyForm>
+    //<Flexbox01Column></Flexbox01Column>
+    <Listado></Listado>
   );
 }
 

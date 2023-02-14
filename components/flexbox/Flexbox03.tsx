@@ -7,12 +7,18 @@ function Flexbox03(): JSX.Element {
       style={[
         styles.container,
         {
+          // Try setting `flexDirection` to `"row"`.
           flexDirection: 'row',
         },
       ]}>
-      <Text style={styles.primero}>¡Hola mundo!</Text>
-      <Text style={styles.hola_mundo}>Hello world!</Text>
-      <Text style={styles.tercero}>Ciao mondo!</Text>
+      <View style={{flex: 0.2, backgroundColor: 'red'}} />
+      <View
+        style={{flex: 2, backgroundColor: 'yellow', flexDirection: 'column'}}>
+        <View style={{flex: 0.2, backgroundColor: 'blue'}}></View>
+        <View style={{flex: 1, backgroundColor: 'green'}}></View>
+        <View style={{flex: 0.2, backgroundColor: 'blue'}}></View>
+      </View>
+      <View style={{flex: 0.2, backgroundColor: 'purple'}} />
     </View>
   );
 }
