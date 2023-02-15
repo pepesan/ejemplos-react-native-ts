@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, Button} from 'react-native';
 import auth from '@react-native-firebase/auth';
+import Collection from './Collection';
 
 function Auth() {
   // Set an initializing state whilst Firebase connects
@@ -77,6 +78,7 @@ function Auth() {
     <View>
       <Text>Welcome {user?.email}</Text>
       <Button title="Sign Out" onPress={() => signOut()} />
+      <Collection></Collection>
     </View>
   );
 }
