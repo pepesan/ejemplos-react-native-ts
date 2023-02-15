@@ -45,24 +45,19 @@ const MyApiClient = () => {
           data={data}
           keyExtractor={({nombre}) => nombre}
           renderItem={({item}) => (
-            <View
-              style={[
-                styles.container,
-                {
-                  // Try setting `flexDirection` to `"row"`.
-                  flexDirection: 'row',
-                },
-              ]}>
+            <View style={styles.item}>
               <Image
-                style={styles.tinyLogo}
+                style={styles.fotoPartido}
                 source={{
                   uri:
                     'https://cursosdedesarrollo.com/pactometro/img/' +
                     item.imagen,
                 }}
               />
-              <Text style={styles.nombre}>{item.nombre}</Text>
-              <Text style={{flex: 2}}>{item.dipu}</Text>
+              <View style={styles.info}>
+                <Text style={styles.title}>Nombre: {item.nombre}</Text>
+                <Text style={styles.id}>Diputados: {item.dipu}</Text>
+              </View>
             </View>
           )}
         />
@@ -71,21 +66,31 @@ const MyApiClient = () => {
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    padding: 10,
+  item: {
+    backgroundColor: 'grey',
+    padding: 5,
+    // marginVertical: 4,
+    // marginHorizontal: 8,
+    margin: 4,
+    flexDirection: 'row',
   },
-  tinyLogo: {
-    width: 100,
-    height: 100,
-    flex: 3,
+  info: {
+    flexDirection: 'column',
+    flex: 0.55,
   },
-  logo: {
-    width: 66,
-    height: 58,
+  fotoPartido: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'contain',
+    flex: 0.45,
   },
-  nombre: {
-    textAlign: 'center',
-    flex: 1,
+  title: {
+    fontSize: 16,
+    flex: 0.9,
+  },
+  id: {
+    fontSize: 16,
+    flex: 0.1,
   },
 });
 
