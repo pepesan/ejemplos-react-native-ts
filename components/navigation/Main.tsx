@@ -3,13 +3,14 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './Home';
 import Details from './Details';
-import Parametros from "./Parametros";
+import Parametros from './Parametros';
+import Main2 from "./ejercicios/Main2";
 
 const Stack = createNativeStackNavigator();
 function Main(): JSX.Element {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen
           name="Home"
           component={Home}
