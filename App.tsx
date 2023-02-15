@@ -29,6 +29,7 @@ import Main from "./components/navigation/Main";
 import MainTabs from "./components/navigation/tabs/MainTabs";
 import MyForm from "./components/forms/MyForm";
 import Listado from "./components/props/Listado";
+import Auth from "./components/firebase/Auth";
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -55,13 +56,14 @@ function App(): JSX.Element {
 
      */
     //<ApiClient></ApiClient>
-    <MyApiClient></MyApiClient>
+    //<MyApiClient></MyApiClient>
     //<Main></Main>
     //<MainTabs></MainTabs>
     //<MyForm></MyForm>
     // <FlatLists></FlatLists>
     //<Flexbox01Column></Flexbox01Column>
     //<Listado></Listado>
+    <Auth></Auth>
   );
 }
 
