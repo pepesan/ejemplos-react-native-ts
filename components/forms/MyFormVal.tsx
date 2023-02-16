@@ -32,17 +32,16 @@ function MyFormVal(): JSX.Element {
           <Formik
             validationSchema={loginValidationSchema}
             initialValues={{email: '', password: ''}}
-            onSubmit={values => console.log(values)}
-          >
+            onSubmit={values => console.log(values)}>
             {({
-                handleChange,
-                handleBlur,
-                handleSubmit,
-                values,
-                errors,
-                isValid,
-                touched,
-              }) => (
+              handleChange,
+              handleBlur,
+              handleSubmit,
+              values,
+              errors,
+              isValid,
+              touched,
+            }) => (
               <>
                 <TextInput
                   name="email"
@@ -67,11 +66,9 @@ function MyFormVal(): JSX.Element {
                   value={values.password}
                   secureTextEntry
                 />
-                {(errors.password && touched.password) && (
-                  <Text style={{fontSize: 10, color: 'red'}}>
-                    {errors.password}
-                  </Text>)
-                }
+                {(errors.password && touched.password) &&
+                  (<Text style={{fontSize: 10, color: 'red'}}>{errors.password}</Text>
+                )}
                 <Button
                   onPress={handleSubmit}
                   title="LOGIN"
@@ -89,7 +86,7 @@ const styles = StyleSheet.create({
   loginContainer: {
     width: '80%',
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor: 'grey',
     padding: 10,
     elevation: 10,
   },
@@ -97,7 +94,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: '100%',
     margin: 10,
-    backgroundColor: 'white',
+    backgroundColor: '#707070',
     borderColor: 'gray',
     borderWidth: StyleSheet.hairlineWidth,
     borderRadius: 10,
