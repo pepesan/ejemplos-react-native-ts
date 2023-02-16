@@ -64,15 +64,14 @@ function App(): JSX.Element {
     // <Main></Main>
     //<MainTabs></MainTabs>
     //<MyForm></MyForm>
-    <MyFormVal></MyFormVal>
+    // <MyFormVal></MyFormVal>
     // <FlatLists></FlatLists>
     //<Flexbox01Column></Flexbox01Column>
     //<Listado></Listado>
     // <Auth></Auth>
     // <Main2></Main2>
     // <TabsStack></TabsStack>
-    // <FireStore></FireStore>
-
+    <FireStore></FireStore>
   );
 }
 

@@ -5,8 +5,8 @@ import Collection from './Collection';
 
 function Auth() {
   // Set an initializing state whilst Firebase connects
-  const [initializing, setInitializing] = useState(true);
-  const [user, setUser] = useState();
+  const [initializing, setInitializing] = useState<boolean>(true);
+  const [user, setUser] = useState<any>();
   const email = 'jane.doe@example.com';
   const password = 'SuperSecretPassword!';
   const signUp = () => {
