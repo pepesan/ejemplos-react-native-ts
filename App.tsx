@@ -14,7 +14,7 @@ import Texts from './components/basic/Texts';
 import Images from './components/basic/Images';
 import TextInputs from './components/basic/TextInputs';
 import ScrollViews from './components/basic/ScrollViews';
-import StyleSheets from './components/basic/styles/StyleSheets';
+import StyleSheets from './components/basic/StyleSheets';
 import Botones from './components/ui/Botones';
 import Switches from './components/ui/Switches';
 import FlatLists from './components/lists/FlatLists';
@@ -32,6 +32,7 @@ import Listado from "./components/props/Listado";
 import Auth from "./components/firebase/Auth";
 import Main2 from './components/navigation/ejercicios/Main2';
 import TabsStack from "./components/navigation/tabs-stack/TabsStack";
+import MyFormVal from "./components/forms/MyFormVal";
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -62,12 +63,13 @@ function App(): JSX.Element {
     // <Main></Main>
     //<MainTabs></MainTabs>
     //<MyForm></MyForm>
+    <MyFormVal></MyFormVal>
     // <FlatLists></FlatLists>
     //<Flexbox01Column></Flexbox01Column>
     //<Listado></Listado>
     // <Auth></Auth>
     // <Main2></Main2>
-    <TabsStack></TabsStack>
+    // <TabsStack></TabsStack>
   );
 }
 
