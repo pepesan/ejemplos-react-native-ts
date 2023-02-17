@@ -1,13 +1,12 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Details from '../navigation/Details';
 import MiCollection from './MiCollection';
 import MyFormFirebase from './MyFormFirebase';
-import MyDetails from "./MyDetails";
-import MyEditFormFirebase from "./MyEditFormFirebase";
+import MyDetails from './MyDetails';
+import MyEditFormFirebase from './MyEditFormFirebase';
 
 const HomeStack = createNativeStackNavigator();
-function MiHome(): JSX.Element {
+function MiListadoRemoto(): JSX.Element {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={MiCollection} />
@@ -18,4 +17,4 @@ function MiHome(): JSX.Element {
   );
 }
 
-export default MiHome;
+export default MiListadoRemoto;

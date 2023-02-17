@@ -69,9 +69,7 @@ function ListadoFirebase({navigation}: NavigationProps): JSX.Element {
     <View>
       <FlatList
         data={listado}
-        renderItem={({item}) => (
-          <Item item={item} navigation={navigation}/>
-        )}
+        renderItem={({item}) => <Item item={item} navigation={navigation} />}
         keyExtractor={item => item.key}
       />
     </View>
