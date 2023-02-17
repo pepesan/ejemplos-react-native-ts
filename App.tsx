@@ -34,6 +34,8 @@ import Main2 from './components/navigation/ejercicios/Main2';
 import TabsStack from "./components/navigation/tabs-stack/TabsStack";
 import MyFormVal from "./components/forms/MyFormVal";
 import FireStore from "./components/firebase/FireStore";
+import MainApp from "./components/proyecto/AuthScreen";
+import MainTabsStack from "./components/proyecto/MainTabsStack";
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -71,7 +73,8 @@ function App(): JSX.Element {
     // <Auth></Auth>
     // <Main2></Main2>
     // <TabsStack></TabsStack>
-    <FireStore></FireStore>
+    // <FireStore></FireStore>
+    <MainTabsStack></MainTabsStack>
   );
 }
 
