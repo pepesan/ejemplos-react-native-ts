@@ -27,6 +27,11 @@ function MyFormFirebase({route, navigation}): JSX.Element {
     navigation.pop(1);
   }
 
+  let styles = {
+    text: {
+      color: 'black',
+    },
+  };
   return (
     <SafeAreaView>
       <Controller
@@ -36,6 +41,7 @@ function MyFormFirebase({route, navigation}): JSX.Element {
         }}
         render={({field: {onChange, onBlur, value}}) => (
           <TextInput
+            style={styles.text}
             underlineColorAndroid="transparent"
             placeholder="Name"
             placeholderTextColor="#9a73ef"
@@ -56,7 +62,7 @@ function MyFormFirebase({route, navigation}): JSX.Element {
         }}
         render={({field: {onChange, onBlur, value}}) => (
           <TextInput
-            //style={styles.input}
+            style={styles.text}
             underlineColorAndroid="transparent"
             placeholder="age"
             placeholderTextColor="#9a73ef"

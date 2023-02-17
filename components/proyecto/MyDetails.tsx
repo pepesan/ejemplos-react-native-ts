@@ -9,13 +9,16 @@ function MyDetails({route, navigation}): JSX.Element {
     name: '',
     age: 0,
   });
+  const [deleted, setDeleted] = useState<boolean>(false);
   const reference = database().ref('/users/' + key);
   console.log(item);
 
   function recarga() {
     reference.on('value', snapshot => {
       console.log('User data: ', snapshot.val());
-      setItem(snapshot.val());
+      if (!deleted) {
+        setItem(snapshot.val());
+      }
     });
   }
 
@@ -36,13 +39,18 @@ function MyDetails({route, navigation}): JSX.Element {
       <Button
         title="Delete"
         onPress={async () => {
+          setDeleted(true);
+          setItem({
+            name: '',
+            age: 0,
+          });
           await reference.remove();
           navigation.pop(1);
         }}
       />
       <Text style={styles.titleText}>Details Screen</Text>
-      <Text style={styles.baseText}>{item.name}</Text>
-      <Text style={styles.baseText}>{item.age}</Text>
+      <Text style={styles.baseText}>{item?.name}</Text>
+      <Text style={styles.baseText}>{item?.age}</Text>
     </View>
   );
 }
